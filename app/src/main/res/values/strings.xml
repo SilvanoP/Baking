@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Baking</string>
+
+    <!-- Toast Messages -->
+    <string name="error_internet_connection">No internet connection, please connect to internet!</string>
+    <string name="error_no_recipe_found">Sorry, no recipes found!</string>
+
+    <!-- example texts -->
+    <string name="tools_recipe_name_text" translatable="false">Recipe name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
