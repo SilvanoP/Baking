@@ -6,5 +6,7 @@ package br.com.udacity.baking.utils;
  */
 public final class Constants {
 
+    public static final String INTENT_EXTRA_LIST_STEP = "INTENT_EXTRA_LIST_STEP";
     public static final String INTENT_EXTRA_RECIPE = "INTENT_EXTRA_RECIPE";
+    public static final String INTENT_EXTRA_STEP = "INTENT_EXTRA_STEP";
 }

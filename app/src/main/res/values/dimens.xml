@@ -2,4 +2,5 @@
 <resources>
     <dimen name="margin_default_value">16dp</dimen>
     <dimen name="text_size_big">20sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
 </resources>
