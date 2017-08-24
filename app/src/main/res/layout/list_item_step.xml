@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/margin_default_value">
+    android:layout_marginTop="@dimen/margin_top_list_value">
 
     <TextView
         android:id="@+id/step_shot_text"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_default_value"
         android:textSize="@dimen/text_size_medium"
+        android:textAllCaps="true"
         tools:text="@string/tools_step_short_text"
         />
 
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_default_value"
         android:layout_marginEnd="@dimen/margin_default_value"
+        android:textSize="@dimen/text_size_small"
         tools:text="@string/tools_step_desc_text"
         />
 

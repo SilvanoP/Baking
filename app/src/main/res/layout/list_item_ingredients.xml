@@ -3,14 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_top_list_value"
     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/ingredient_name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default_value"
+        android:layout_marginStart="@dimen/margin_default_value"
+        android:layout_marginEnd="@dimen/margin_default_value"
         android:textSize="@dimen/text_size_medium"
+        android:textAllCaps="true"
         tools:text="@string/tools_ingredient_name_text"
         />
 
@@ -19,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_default_value"
+        android:textSize="@dimen/text_size_small"
         tools:text="@string/tools_ingredient_quantity_text"
         />
 
@@ -27,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_default_value"
+        android:textSize="@dimen/text_size_small"
         tools:text="@string/tools_ingredient_measure_text"
         />
 

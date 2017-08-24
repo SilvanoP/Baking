@@ -49,8 +49,6 @@ public class RecipeStepAdapter extends RecyclerView.Adapter<RecipeStepAdapter.Re
 
     class RecipeStepViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @BindView(R.id.step_thumbnail_image)
-        ImageView thumbnailImageView;
         @BindView(R.id.step_shot_text)
         TextView shortTextView;
         @BindView(R.id.step_description_text)
@@ -70,7 +68,7 @@ public class RecipeStepAdapter extends RecyclerView.Adapter<RecipeStepAdapter.Re
 
         @Override
         public void onClick(View view) {
-
+            mListener.onItemClick(getAdapterPosition());
         }
     }
 }

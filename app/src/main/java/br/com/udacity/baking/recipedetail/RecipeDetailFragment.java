@@ -33,7 +33,6 @@ public class RecipeDetailFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     public static RecipeDetailFragment newInstance(String param1, String param2) {
         RecipeDetailFragment fragment = new RecipeDetailFragment();
         Bundle args = new Bundle();
@@ -58,8 +57,9 @@ public class RecipeDetailFragment extends Fragment {
                 @Override
                 public void onItemClick(int position) {
                     Intent intent = new Intent(getContext(), RecipeDetailStepActivity.class);
-                    intent.putExtra(Constants.INTENT_EXTRA_STEP, mRecipe.getSteps().get(position));
+                    intent.putExtra(Constants.INTENT_EXTRA_STEP_INDEX, position);
                     intent.putExtra(Constants.INTENT_EXTRA_LIST_STEP, new ArrayList<Parcelable>(mRecipe.getSteps()));
+                    startActivity(intent);
                 }
             };
 

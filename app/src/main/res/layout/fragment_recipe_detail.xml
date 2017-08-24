@@ -10,10 +10,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default_value"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold"
+            android:text="@string/ingredient"
+            />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recipe_ingredient_recycler"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_default_value"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default_value"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold"
+            android:text="@string/steps"
+            />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recipe_steps_recycler"

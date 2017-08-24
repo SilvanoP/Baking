@@ -3,6 +3,10 @@
 
     <string name="measure">Measure:</string>
     <string name="quantity">Quantity:</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="ingredient">Ingredients</string>
+    <string name="steps">Steps</string>
 
     <!-- Measures -->
     <string name="measure_grams">Grams</string>
@@ -16,6 +20,8 @@
     <!-- Toast Messages -->
     <string name="error_internet_connection">No internet connection, please connect to internet!</string>
     <string name="error_no_recipe_found">Sorry, no recipes found!</string>
+    <string name="warning_first_step">This is the first step!</string>
+    <string name="warning_last_step">This is the last step!</string>
 
     <!-- Example texts for preview only -->
     <string name="tools_recipe_name_text" translatable="false">Recipe name</string>
