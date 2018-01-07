@@ -34,6 +34,9 @@ import butterknife.ButterKnife;
 
 public class RecipeDetailStepFragment extends Fragment {
 
+    private final String STEP_KEY = "STEP_KEY";
+    private final String STEP_INDEX_KEY = "STEP_INDEX_KEY";
+
     @BindView(R.id.step_video_exo_player)
     SimpleExoPlayerView mExoPlayerView;
     @BindView(R.id.step_no_video_image)
@@ -76,6 +79,11 @@ public class RecipeDetailStepFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_recipe_detail_step, container, false);
         ButterKnife.bind(this, view);
+
+        if (savedInstanceState != null) {
+            mStep = savedInstanceState.getParcelable(STEP_KEY);
+            mStepIndex = savedInstanceState.getInt(STEP_INDEX_KEY);
+        }
 
         if (mStep != null) {
             mPlayWhenReady = true;
@@ -154,7 +162,17 @@ public class RecipeDetailStepFragment extends Fragment {
         mStep = step;
         mStepIndex = index;
         mCallback = callback;
+    }
 
-        Log.i(this.getClass().getSimpleName(), "Step index:" + index );
+    public void setCallback(StepsCallback callback) {
+        mCallback = callback;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putParcelable(STEP_KEY, mStep);
+        outState.putInt(STEP_INDEX_KEY, mStepIndex);
     }
 }

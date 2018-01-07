@@ -3,6 +3,7 @@ package br.com.udacity.baking.recipedetail;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -21,6 +22,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class RecipeDetailFragment extends Fragment {
+
+    private final String RECIPE_KEY = "RECIPE_KEY";
 
     @BindView(R.id.recipe_ingredient_recycler)
     RecyclerView mIngredientRecyclerView;
@@ -45,6 +48,10 @@ public class RecipeDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_recipe_detail, container, false);
         ButterKnife.bind(this, view);
+
+        if (savedInstanceState != null) {
+            mRecipe = savedInstanceState.getParcelable(RECIPE_KEY);
+        }
 
         if (mRecipe == null) {
             Toast.makeText(getContext(), R.string.error_no_recipe_found, Toast.LENGTH_LONG).show();
@@ -73,5 +80,12 @@ public class RecipeDetailFragment extends Fragment {
 
     public void setRecipe(Recipe recipe) {
         mRecipe = recipe;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putParcelable(RECIPE_KEY, mRecipe);
     }
 }
