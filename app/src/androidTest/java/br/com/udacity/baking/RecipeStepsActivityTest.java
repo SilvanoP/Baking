@@ -31,7 +31,7 @@ public class RecipeStepsActivityTest {
     public void recipeStepsActivityTest() {
         ViewInteraction recipesList = onView(withId(R.id.recipes_ac_recycleview));
         recipesList.perform(actionOnItemAtPosition(1, click()));
-        sleep(700);
+        sleep(1000);
 
         // click at first step
         ViewInteraction stepsList = onView(
