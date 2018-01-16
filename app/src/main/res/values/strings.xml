@@ -1,33 +1,26 @@
 <resources>
+
+    <string name="baking_api_base_url" translatable="false">https://d17h27t6h515a5.cloudfront.net/</string>
+
+    <!-- Common strings -->
     <string name="app_name">Baking</string>
+    <string name="retry">Retry</string>
+    <string name="connection_error">"Check your connection and try again."</string>
+    <string name="internal_error">"Sorry. Something goes wrong."</string>
 
-    <string name="measure">Measure:</string>
-    <string name="quantity">Quantity:</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="ingredient">Ingredients</string>
-    <string name="steps">Steps</string>
+    <!-- Recipes Widget -->
+    <string name="appwidget_text">Recipe</string>
+    <string name="recipe_widget_configure_ac_configure_label">Please choose a recipe:</string>
 
-    <!-- Measures -->
-    <string name="measure_grams">Grams</string>
-    <string name="measure_kilo">Kg</string>
-    <string name="measure_unit">Unit(s)</string>
-    <string name="measure_tblsp">Table spoon(s)</string>
-    <string name="measure_tsp">Tea spoon(s)</string>
-    <string name="measure_cup">Cup(s)</string>
-    <string name="measure_oz">Oz</string>
+    <!-- Remote Services messages-->
+    <string name="remote_services_request_error_get_recipes">"Recipes couldn't be loaded."</string>
+    <string name="title_recipeitem_list">Recipe</string>
+    <string name="step_ac_title">Step</string>
+    <string name="ingredients_ac_title">Ingredients</string>
+    <string name="recipe_ac_step_name_textview">%1$d. %2$s</string>
+    <string name="recipes_ac_servings">Servings: %1$d</string>
+    <string name="ingredients_frag_query">list of ingredients %1$s</string>
+    <string name="step_frag_novideo_textview">There is no video for this step.</string>
+    <string name="not_available_data">--//--</string>
 
-    <!-- Toast Messages -->
-    <string name="error_internet_connection">No internet connection, please connect to internet!</string>
-    <string name="error_no_recipe_found">Sorry, no recipes found!</string>
-    <string name="warning_first_step">This is the first step!</string>
-    <string name="warning_last_step">This is the last step!</string>
-
-    <!-- Example texts for preview only -->
-    <string name="tools_recipe_name_text" translatable="false">Recipe name</string>
-    <string name="tools_ingredient_name_text" translatable="false">Ingredient name</string>
-    <string name="tools_ingredient_measure_text" translatable="false">Table spoon</string>
-    <string name="tools_ingredient_quantity_text" translatable="false">100</string>
-    <string name="tools_step_short_text" translatable="false">Short description</string>
-    <string name="tools_step_desc_text" translatable="false">Lorem ipsum</string>
 </resources>
